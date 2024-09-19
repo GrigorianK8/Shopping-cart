@@ -1,4 +1,4 @@
-package com.example.backendJava.dto.request;
+package com.example.backendJava.request;
 
 import com.example.backendJava.entity.Category;
 import lombok.Data;
@@ -6,7 +6,7 @@ import lombok.Data;
 import java.math.BigDecimal;
 
 @Data
-public class AddProductRequest {
+public class ProductUpdateRequest {
 
     private Long id;
     private String name;

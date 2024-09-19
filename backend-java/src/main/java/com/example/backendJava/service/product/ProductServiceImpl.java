@@ -1,7 +1,7 @@
 package com.example.backendJava.service.product;
 
-import com.example.backendJava.dto.request.AddProductRequest;
-import com.example.backendJava.dto.request.ProductUpdateRequest;
+import com.example.backendJava.request.AddProductRequest;
+import com.example.backendJava.request.ProductUpdateRequest;
 import com.example.backendJava.entity.Category;
 import com.example.backendJava.entity.Product;
 import com.example.backendJava.exceptions.ProductNotFoundException;
