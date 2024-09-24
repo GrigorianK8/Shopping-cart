@@ -1,5 +1,6 @@
 package com.example.backendJava.service.product;
 
+import com.example.backendJava.entity.Category;
 import com.example.backendJava.request.AddProductRequest;
 import com.example.backendJava.request.ProductUpdateRequest;
 import com.example.backendJava.entity.Product;
@@ -28,5 +29,5 @@ public interface ProductService {
 
     Product getProductById(Long id);
 
-    void deleteProduct(Long id);
+    void deleteProductById(Long id);
 }

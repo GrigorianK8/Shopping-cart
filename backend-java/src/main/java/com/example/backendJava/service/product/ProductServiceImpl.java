@@ -27,8 +27,8 @@ public class ProductServiceImpl implements ProductService {
                     Category newCategory = new Category(request.getCategory().getName());
                     return categoryRepository.save(newCategory);
                 });
-                request.setCategory(category);
-                return productRepository.save(createProduct(request, category));
+        request.setCategory(category);
+        return productRepository.save(createProduct(request, category));
     }
 
     @Override
@@ -81,7 +81,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public void deleteProduct(Long id) {
+    public void deleteProductById(Long id) {
         productRepository.findById(id)
                 .ifPresentOrElse(productRepository::delete,
                         () -> {throw new ProductNotFoundException("Product not found!");});
